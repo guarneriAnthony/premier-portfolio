@@ -1,0 +1,169 @@
+/* general */
+html, body {
+	padding: 0;
+	font-family: calligraffitiregular;
+}
+a, a:hover {
+	text-decoration: none;
+}
+.container-fluid {
+	padding: 0;
+}
+.container {
+	padding-left: 15%;
+	padding-right: 15%;
+}
+.separateur {
+	margin-top: 0;
+	height: 3px;
+	width: 5%;
+	border: none;
+	box-shadow: none;
+	background-color: #C5B5A8;
+}
+h2 {
+	font-size: 40px;
+	margin-top: 5%;
+	color: #AD0011;
+}
+/* end general */
+
+/* fonts */
+@font-face {
+    font-family: 'black_jackregular';
+    src: url('blackjack-webfont.eot');
+    src: url('blackjack-webfont.eot?#iefix') format('embedded-opentype'),
+         url('blackjack-webfont.woff2') format('woff2'),
+         url('blackjack-webfont.woff') format('woff'),
+         url('blackjack-webfont.ttf') format('truetype'),
+         url('blackjack-webfont.svg#black_jackregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'calligraffitiregular';
+    src: url('Calligraffiti-webfont.eot');
+    src: url('Calligraffiti-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Calligraffiti-webfont.woff2') format('woff2'),
+         url('Calligraffiti-webfont.woff') format('woff'),
+         url('Calligraffiti-webfont.ttf') format('truetype'),
+         url('Calligraffiti-webfont.svg#calligraffitiregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* end fonts */
+
+
+
+/* header */
+.header {
+	text-align: center;
+	background-color: #C5B5A8;
+}
+#logo {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #ffffff;
+	text-shadow: 1px 1px 10px #AD0011;
+	font-family: black_jackregular;
+}
+#menu {
+	float: right;
+	margin-top: 40px;
+	text-shadow: 1px 1px 10px #AD0011;
+}
+.menu a {
+	color: #ffffff;
+	margin-right: 5px;
+	font-size: 20px;
+}
+.menu a:hover {
+	color: #AD0011;
+}
+/* end header */
+
+/* banniere */
+.banniere {
+	width: 100%;
+	max-width: 100%;
+	position: relative;
+}
+#banniere {
+	width: 100%;
+	max-width: 100%;
+}
+#banniere img {
+	width: 100%;
+	max-width: 100%;
+}
+.texte-banniere {
+	position: absolute;
+	width: 50%;
+	top: 40%;
+	left: 25%;
+	text-align: center;
+}
+.texte-h1 {
+	margin: auto;
+}
+.texte-banniere h1 {
+	color: #ffffff;
+	text-shadow: 1px 1px 10px black;
+}
+/* end banniere */
+
+/* presentation */
+.presentation {
+	width: 100%;
+	height: 350px;
+	text-align: center;
+}
+.presentation p {
+	font-size: 20px;
+}
+/* end presentation */
+
+/* galerie */
+#galerie {
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+	max-height: 100%;
+}
+.galerie .item-folio {
+	height: 25%;
+	width: 25%;
+	margin-top: 10px;
+}
+.galerie .container article img {
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+	max-height: 100%;
+}
+/* galerie */
+
+/* liens */
+.contacts {
+	text-align: center;
+}
+.contacts img {
+	width: 10%;
+	height: 10%
+}
+.contacts p {
+	font-size: 25px;
+}
+/* end liens */
+
+/* footer */
+#footer {
+	text-align: center;
+	background-color: grey;
+	margin-top: 10px;
+}
+#footer p {
+	margin-top: 10px;
+}
+/* footer */

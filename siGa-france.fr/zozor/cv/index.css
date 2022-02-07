@@ -1,0 +1,313 @@
+			/* fonts */
+
+@font-face
+
+{
+font-family: 'BallparkWeiner';
+    src: url('fonts/ballpark.eot');
+    src: url('fonts/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ballpark.woff') format('woff'),
+         url('fonts/ballpark.ttf') format('truetype'),
+         url('fonts/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+
+{
+    font-family: 'Dayrom';
+    src: url('fonts/dayrom.eot');
+    src: url('fonts/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('fonts/dayrom.woff') format('woff'),
+         url('fonts/dayrom.ttf') format('truetype'),
+         url('fonts/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+			/* global */
+
+#bloc_page
+{
+	width: 900px;
+	margin: auto;
+}
+
+body
+{
+	background:url('img/fond_jaune.png');
+	font-family: 'Trebuchet MS', Arial, sans-serif;	
+	color: #181818;	
+}
+
+section h1, footer h1, nav a
+{
+	font-family: Dayrom, sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+
+			/* header */
+
+header
+{
+	background: url('img/separateur.png') repeat-x bottom;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+#titre_principal
+{
+	display: flex;
+	flex-direction: column;
+}
+
+#logo
+{
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+}
+
+#logo img
+{
+	width: 59px;
+	height: 60px;
+}
+
+header h1
+{
+	font-family: BallparkWeiner, sans-serif;
+	font-size: 2.5em;
+	font-weight: normal;
+	margin: 0 0 0 10px;
+}
+
+header h2
+{
+	font-family: Dayrom, sans-serif;
+	font-size: 1.1em;
+	margin-top: 0px;
+	font-weight: bold;
+}
+
+
+			/* Navigation */
+
+nav ul
+{
+	list-style: none;
+	display: flex;
+}
+
+nav li
+{
+	margin-right: 15px;
+}
+
+nav a 
+{
+	font-size: 1.3em;
+	color: #181818;
+	padding-bottom: 3px;
+	text-decoration: none;
+}
+
+nav a:hover
+{
+	color: #760001;
+	border-bottom: 3px solid #760001;
+}
+
+
+			/* Banniere */
+
+#banniere_img
+{
+	margin-top: 15px;
+	height: 200px;
+	border-radius: 5px;
+	background: url(img/sanfrancisco.jpg) no-repeat;
+	position: relative;
+	box-shadow: 0px 4px 4px #1c1a19;
+	margin-bottom: 25px;
+}			
+
+#banniere_description
+{
+	padding-top: 10px;
+	position: absolute;
+	bottom: 0px;
+	border-radius: 0px 0px 5px 5px;
+	width: 100%;
+	height: 33px;
+	background-color: rgba(24,24,24,0.8);
+	color: white;
+	font-size: 0.8em;
+}
+
+.bouton_rouge
+{
+	height: 25px;
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+	background: url(img/fond_degraderouge.png) repeat-x;
+	border: 1px solid #760001;
+	text-align: center;
+	padding: 3px 8px 0px 8px;
+	color: white;
+	text-decoration: none;
+	font-size: 1.2em;
+	border-radius: 5px;
+}
+.bouton_rouge
+{
+	border: 0;
+}
+
+
+				/* Corps */
+
+section
+{
+	display: flex;
+	margin-bottom: 20px;
+}	
+
+article, aside
+{
+	text-align: justify;
+}	
+
+article
+{
+	margin-right: 20px;
+	flex: 3;
+}	
+
+.ico_epingle
+{
+	vertical-align: middle;					
+	margin-right: 8px;
+}	
+
+article p
+{
+	font-size: 0.8em;
+}
+
+aside
+{
+	flex: 1.2;
+	position: relative;
+	background-color: #706b64;
+	box-shadow: 0px 2px 5px #1c1a19;
+	border-radius: 5px;
+	padding: 10px;
+	color: white;
+	font-size: 0.9em;
+}
+
+aside h2
+{
+	font-family: Dayrom,sans-serif;
+	text-align: center;
+}
+
+#fleche_bulle
+{
+	position: absolute;
+	top: 100px;
+	left: -12px;
+}
+
+#photo_zozor
+{
+	text-align: center;
+}
+
+#photo_zozor img
+{
+	border: 1.5px solid #181818;
+	box-shadow: 0 2px 5px #1c1a19;
+}
+
+aside img
+{
+	margin-right: 5px;
+}
+
+.reseaux
+{
+	display: flex;
+	justify-content: center;
+}
+
+
+					/* Footer */
+
+footer
+{
+	display: flex;
+	justify-content: space-between;
+	background: url('img/ico_top.png') no-repeat top center, url('img/separateur.png') repeat-x, url('img/ombre.png') repeat-x top;
+	padding-top: 25px;
+	margin-bottom: 8px;
+}
+
+footer p, footer ul 
+{
+	font-size: 0.8em;
+}
+
+footer h1
+{
+	font-size: 1.1em;
+}
+
+
+
+#tweet
+{
+	width: 28%;
+}
+
+#mes_photos 
+{
+	width: 35%;
+}
+
+#amis
+{
+	width: 31%;
+}
+
+#mes_photos img
+{
+	border: 1px solid #181818;
+	margin-left: 2px;
+}
+
+#liste_amis
+{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 0px;
+}
+
+#liste_amis ul
+{
+	list-style-image: url(img/ico_liensexterne.png);
+	padding-left: 2px;
+}
+
+#liste_amis a
+{
+	text-decoration: none;
+	color: #760001;
+}

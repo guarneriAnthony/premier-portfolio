@@ -1,0 +1,432 @@
+			/* FONTS */
+
+@font-face 
+{
+    font-family: 'brushstroke';
+    src: url('fonts/BRUSHSTP-webfont.eot');
+    src: url('fonts/BRUSHSTP-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BRUSHSTP-webfont.woff2') format('woff2'),
+         url('fonts/BRUSHSTP-webfont.woff') format('woff'),
+         url('fonts/BRUSHSTP-webfont.ttf') format('truetype'),
+         url('fonts/BRUSHSTP-webfont.svg#brushstroke_plainplain') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+	font-family: 'dayrom';
+	src: url('fonts/dayrom.eot');
+	src: url('fonts/dayrom.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/dayrom.woff2') format('woff2'),
+         url('fonts/dayrom.woff') format('woff'),
+         url('fonts/dayrom.ttf') format('truetype'),
+         url('fonts/dayrom.svg#brushstroke_plainplain') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+											/* GENERAL */
+
+*
+{
+	margin: 0px;
+}
+
+#wrapper
+{
+	width: 1903px;
+	margin: auto;
+}
+
+#main
+{
+	margin-left: 380px;
+	background: #e8edec; 
+	box-shadow: 7px 0px 7px black;
+}	
+
+.h2Droit, .h2Gauche
+{
+	font-family: brushstroke;
+}
+
+h1
+{
+	font-family: dayrom;
+	font-size: 35px;
+	text-align: center;
+	margin-top: 35px;
+
+} 
+
+p
+{
+	font-family: dayrom;
+	text-align: center;
+}
+
+input
+{
+	margin: 10px;
+}
+
+
+
+
+
+
+											/* MENU GAUCHE */
+
+#menuGauche
+{
+	width: 380px;
+	height: 1080px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;	
+	float: left;
+	position: fixed;
+	border: 1px solid black;
+	background-color: #222629 ;
+	box-shadow: 7px 0px 7px black;
+}
+
+	@media all and (max-width: 480px)
+	{
+		#menuGauche
+		{
+			height: 100%;
+		}
+	}
+
+#imgMenu
+{
+	align-self: center;	
+}			
+
+#imgMenu img
+{
+	height: 144px;
+	width: 192px;
+	border-radius: 6px;
+	box-shadow: 7px 6px 4px #151819;
+}
+
+
+#navMenu
+{
+	display: flex;
+	flex-direction: column;
+	height: 400px;
+	justify-content: space-between;
+}
+
+#navMenu a
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: brushstroke;
+	font-size: 24px;
+	text-align: right;
+	height: 80px;	
+	padding-right: 50px;
+	text-decoration: none;
+	color: #c6c6c6;
+}
+
+#navMenu a:hover
+{
+	background-color: #151819;
+	border: 1px solid #0e1011;
+}
+
+#navMenu a img
+{
+	height: 40px;
+	width: 40px;
+	padding-left: 40px;
+}
+
+#social
+{
+	align-self: center;
+	text-align:center;
+}
+
+#social a 
+{
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+#social a img
+{
+	box-shadow: 7px 6px 4px #151819;
+}
+
+#social p
+{
+	color: #c6c6c6;
+}
+
+
+
+												/* MAIN */
+
+#main #banniere
+{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-left: 5px;
+	height: 160px;
+	font-size: 25px;
+	color: white; 
+	background-color: #222629 ;
+	box-shadow: 0px 7px 7px black;
+}
+
+#main #banniere .chibiHomme
+{
+	position: absolute;
+	height: 165px;
+	width: 150px;
+	top: 0px;
+	left: 240px;
+}
+
+#main #banniere .chibiFemme
+{
+	position: absolute;
+	height: 150px;
+	width: 150px;
+	top: 10px;
+	right: 240px;
+}
+
+#bioContenaire
+{
+	display: flex;
+	justify-content: space-around;
+	margin: 55px 0px;
+	border-top: 2px solid grey;
+	border-bottom: 2px solid grey;
+	background-color: #d7dddc;
+	box-shadow: 4px 4px 4px black;
+}
+
+#bioContenaire #bioTitle
+{
+	margin-top: 35px;
+	position: absolute;
+	height: 40px;
+}
+
+#bioContenaire .bio
+{
+	font-family: dayrom;
+	margin: 90px;
+	border: 1px solid grey;
+	border-radius: 25px;
+	background-color: white;
+	box-shadow: 4px 4px 4px black;
+}
+
+#bioContenaire .bio p
+{
+	margin: 20px;
+	text-align: center;
+	font-weight: bold;
+}
+
+#chemin
+{
+	height: 1200px;
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.projetGauche, .projetDroit
+{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 400px;
+}
+
+.projetDroit
+{
+	align-self: flex-end;
+	border-left: 2px dashed red;
+}
+
+.projetGauche
+{
+	margin-left: -2px;
+	border-right: 2px dashed red;
+}
+
+#chemin .h2Droit, #chemin .h2Gauche
+{
+	width: 400px;
+	height: 200px;
+	text-align: center;
+	border: 2px solid grey;
+	border-radius: 25px;
+	background-color: white;
+	box-shadow: 4px 4px 4px black;
+}
+
+#chemin .h2Gauche p img
+{
+	position: absolute;
+	top: 45px;
+	right: 100px;
+	width: 40px;
+	height: 40px;
+}
+
+.titleVert
+{
+	color: green;
+	margin: 7px;
+}
+
+#chemin ul
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-wrap: wrap;
+	height: 150px;
+
+}
+
+#chemin li
+{
+	list-style: none;
+	font-size: 14px;
+	text-align: left;
+}
+
+.titleRouge
+{
+	color: red;
+	margin: 7px;
+}
+
+#chemin .h2Gauche
+{
+	margin-left: 200px;
+}
+
+#chemin .h2Droit
+{
+	margin-right: 200px;
+}	
+
+#chemin .h2Gauche img
+{
+	position: absolute;
+	top: 110px;
+	right: 2px;
+	width: 80px;
+	height: 80px;
+}
+
+#chemin .h2Droit img
+{
+	position: absolute;
+	top: 110px;
+	left: 2px;
+	width: 80px;
+	height: 80px;
+}
+
+#bot
+{
+	width: 400px;
+	height: 200px;
+	margin: auto;
+	text-align: center;
+	border: 2px solid grey;
+	border-radius: 25px;
+	background: url(img/fondJaune.png);
+	box-shadow: 4px 4px 4px black;
+}
+
+#bot h1
+{	
+	margin-top: 50px;
+	text-align: center;
+}
+
+
+												/* VIDEO */
+
+
+#videoContenaire
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 80px;
+	height: 540px;
+	background-color: #d7dddc;
+	border: 1px solid grey;
+	box-shadow: 4px 4px 4px black;
+}
+#videoContenaire h1
+{
+	align-self: flex-start;
+}
+
+#videoContenaire .video
+{
+	height: 330px;
+	width: 570px;
+	background-color: white;
+	border-radius: 10px;
+	margin: 0px 50px;
+}
+
+#videoContenaire .video video
+{
+	width: 550px;
+	margin: 10px 10px;
+}		
+
+
+												/* CONTACT */
+
+#contactContenaire
+{
+	height: 220px;
+	background-color: #222629;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 40px;
+	box-shadow: 0px -7px 7px black;
+}
+
+#contactContenaire #contact
+{
+	margin-bottom: 35px;
+}
+
+#contactContenaire #inputContenaire input
+{
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
